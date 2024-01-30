@@ -1,0 +1,133 @@
+.meeting {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px; /* Adjust gap as needed */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto; /* Shorthand for margin-left: auto; margin-right: auto; */
+}
+
+.KnowTitle {
+    color: #3F3F3F;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.FocText {
+    color: #F72D57;
+    font-weight: 600;
+}
+
+.meeting > div:nth-child(odd) {
+    order: 1; /* Change the order for odd rows */
+}
+
+.meeting > div:nth-child(even) {
+    order: 2; /* Change the order for even rows */
+}
+
+.subTitle, .subTitle1 {
+    color: #3F3F3F;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+   
+}
+
+.sectionMain{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+.subDetails, .subDetails1 {
+    color: #3F3F3F;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+    text-align: justify;
+    
+}
+
+.details1 {
+    margin-top: 100px;
+    max-width: 1440px;
+    margin: 0 auto; 
+}
+
+
+.focus1{
+    color: #F72D57;
+
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+}
+
+.details1{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+    .meeting {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Center the text for smaller screens */
+    }
+
+    .KnowTitle {
+        font-size: 30px;
+    }
+
+    .meetingImg {
+        width: 380px;
+        height: 253px;
+        margin-bottom: 10px;
+    }
+
+    .subTitle {
+        font-size: 24px;
+        margin-left: 18px;
+        text-align: left;
+    }
+
+    .subDetails {
+        margin-left: 0;
+        text-align: justify;
+        padding-left: 18px;
+        padding-right: 18px;
+        font-size: 15px; /* Reset margin for smaller screens */
+    }
+
+    .meeting11{
+        flex-direction: column-reverse;
+    }
+
+    .environmentImg{
+    width: 380px;
+    height: 253px;
+    }
+
+    .subTitle1{
+        font-size: 24px;
+        margin-left: 15px;
+        text-align: left;
+    }
+
+    .subDetails1{
+        font-size: 15px;
+        text-align: justify;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
+

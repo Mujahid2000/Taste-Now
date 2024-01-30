@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: auto;
+    bottom: 10px; /* Adjust the value as needed */
+  }
+  
+  
+  .swiper-button-next {
+    margin-right: 10px;
+  }
+  
+  .swiper-button-prev {
+    margin-left: 10px;
+  }
+  
+  
+  /* Include the Poppins font from a CDN or import it in your project */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+  

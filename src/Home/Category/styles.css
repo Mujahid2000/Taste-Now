@@ -1,0 +1,271 @@
+#root {
+    height: 100%;
+  }
+ 
+  
+  body {
+    /* background: #eee; */
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 1200px;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 400px;
+    margin: 20px auto;
+  }
+  .append-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .append-buttons button {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+  }
+  
+  /* Add this style to your Category.css or other CSS file */
+/* Add this style to your styles.css or other CSS file */
+.custom-dot {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #000; /* Change to black (#000) or your desired color */
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.card{
+  background-color: #fff;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  
+}
+  .catTitle{
+    text-align: center;
+    font-size: 48px;
+}
+.highlight{
+    color: #F72D57;
+}
+
+.categoryMain{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.cardTitle{
+    color: #3F3F3F;
+}
+.button{
+    background-color: #F72D57;
+    width: 140px;
+    height: 34px;
+    border: none;
+    color: #Fff;
+}
+
+.image{
+    height: 120px;
+}
+
+.className{
+  color: #000;
+}
+
+/* Add this style to your styles.css or other CSS file */
+.swiper-button-next,
+.swiper-button-prev {
+  top: auto;
+  bottom: 5px; /* Adjust the value as needed */
+}
+
+/* Optional: Add margin for better spacing */
+.swiper-button-next {
+  margin-right: 600px;
+  margin-top: 800px;
+  color: #F72D57;
+}
+
+.swiper-button-prev {
+  margin-left: 600px;
+  margin-top: 1200px;
+  color: #F72D57;
+  
+}
+
+.foodCategory{
+width: 300px;
+height: 86px;
+background-color: #F72D57;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 5px;
+box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.foodCategory h2{
+  color: white;
+  font-weight: 600;
+  font-family: Poppins;
+}
+
+/* Add this style to your styles.css or other CSS file */
+.rating-container {
+  position: absolute;
+  top: 30px; /* Adjust the top value as needed */
+  right: 50px; /* Adjust the right value as needed */
+}
+
+.rating {
+width: 26px;
+height: 37px;
+}
+.rate {
+  position: absolute;
+  margin-top: -18px;
+  margin-left: 7px;
+  color: #3F3F3F;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.star{
+  position: absolute;
+  margin-top: -38px;
+  margin-left: -9px;
+
+}
+
+.foodItem{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  place-items: center;
+
+}
+
+.foodCategoryNo{
+  width: 300px;
+  height: 86px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 5px;
+  font-family: Poppins;
+}
+
+.foodCategoryNo h2{
+  color: #F72D57;
+  font-family: Poppins;
+}
+
+@media screen and (max-width: 640px){
+  .foodItem{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    place-items: center;
+  }
+
+  .foodCategoryNo{
+    width: 176px;
+    height: 56px;
+  }
+  .foodCategory{
+    width: 176px;
+    height: 56px;
+  }
+
+  .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+    box-sizing: content-box;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .rating-container {
+    position: absolute;
+    top: 40px;
+    right: -10px;
+  }
+
+  .catTitle{
+    text-align: center;
+    font-size: 30px;
+}
+}
+
+@media (min-width: 768px) { 
+  .foodItem{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    place-items: center;
+  }
+
+ 
+ }
+
+
+ @media (min-width: 1280px) { 
+  
+  }
+
