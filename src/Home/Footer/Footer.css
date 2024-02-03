@@ -70,7 +70,7 @@ margin-top: 5px;
 @media screen and (max-width: 640px){
     .footerText {
         flex-direction: column;
-        gap: 50px;
+        gap: 40px;
         justify-content: space-between;
     }
 
@@ -89,6 +89,6 @@ margin-top: 5px;
         margin-right: auto;
     }
     .footer-list li{
-        font-size: 13px;
+        font-size: 10px;
     }
 }
